@@ -5,11 +5,11 @@ const translations = {
     privacyText: "Məxfilik siyasəti",
   },
   en: {
-    heroText: "With You Soon",
+    heroText: "Comming Soon",
     privacyText: "Privacy Policy",
   },
   ru: {
-    heroText: "Скоро С Тобой",
+    heroText: "До скорой встречи",
     privacyText: "Политика конфиденциальности",
   },
 };
