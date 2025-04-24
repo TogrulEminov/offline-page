@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <title>AHIIK</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-wrapper">
+          <a href="/">
+            <img src="/assets/img/ahikLogo.png" alt="" />
+          </a>
+
+          <div class="language">
+            <button class="lang-btn" onclick="changeLanguage('az')">Az</button>
+            <button class="lang-btn" onclick="changeLanguage('en')">En</button>
+            <button class="lang-btn" onclick="changeLanguage('ru')">Ru</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="cursor"></div>
+      <div class="shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+      <section class="hero_content">
+        <h1><span id="heroText">Tezliklə Sizinlə</span></h1>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <a href="/privacy.html" id="privacyText">Mexfilik siyaseti</a>
+      </div>
+    </footer>
+  </body>
+</html>

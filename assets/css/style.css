@@ -1,0 +1,265 @@
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  cursor: none;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+main {
+  background: transparent;
+  position: relative;
+  min-height: calc(100vh - 56px);
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+header {
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-wrapper a img {
+  width: 150px;
+}
+
+.language {
+  display: flex;
+  gap: 10px;
+}
+
+.language button {
+  background-color: transparent;
+  border: 1px solid #2b4973;
+  width: 40px;
+  height: 40px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  color: #2b4973;
+}
+
+.language button:hover {
+  background-color: #2b4973;
+  color: #fff;
+}
+.lang-btn.active {
+  background-color: #2b4973;
+  color: #fff;
+}
+
+/* Hero content stil ayarları */
+
+.hero_content h1 {
+  font-size: 40px;
+  color: #2b4973;
+  max-width: fit-content;
+  margin-bottom: 20px;
+  white-space: nowrap;
+  font-weight: 900;
+  overflow: hidden;
+  display: inline-block;
+  border-right: 0.1em solid #2b4973;
+  width: 0;
+  animation: typing 4s steps(40) 0.75s infinite,
+    blinkCaret 0.75s step-end infinite;
+  background: -webkit-linear-gradient(#eeeeee37, #2b4973);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@keyframes typing {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+/* Blinking cursor effect */
+@keyframes blinkCaret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.hero_content a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.hero_content a:hover {
+  background-color: #0056b3;
+}
+@media screen and (min-width: 992px) {
+  .hero_content h1 {
+    font-size: 60px;
+  }
+  .language button {
+    width: 60px;
+    height: 40px;
+  }
+}
+/* Footer stil ayarları */
+footer {
+  background-color: #2b4973;
+  padding: 20px 0;
+  position: relative;
+  z-index: 9999;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.pravicy-section {
+  padding: 120px 0 60px;
+  min-height: 100vh;
+  margin-right: 10px;
+  color: #2b4973;
+  line-height: 1.2;
+}
+.pravicy-section h1 {
+  color: #2b4973;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.update-date {
+  margin-bottom: 10px;
+}
+.pravicy-section h2 {
+  color: #2b4973;
+  margin: 20px 0;
+}
+.pravicy-section strong {
+  font-weight: bold;
+}
+.pravicy-section p {
+  margin-bottom: 10px;
+}
+.pravicy-section ul li {
+  margin-bottom: 10px;
+}
+.pravicy-section ul li:before,
+.pravicy-section ol li:before {
+  content: "⁍";
+  margin-right: 10px;
+  color: #2b4973;
+}
+.contact-info p strong {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+@media screen and (min-width: 992px) {
+  .pravicy-section h1 {
+    font-size: 40px;
+  }
+}
+/* Shapes container */
+.shapes {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* Shape Styles */
+.shape {
+  will-change: transform;
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Shape Color and Size */
+.shape-1 {
+  background: #005ffe;
+  width: 650px;
+  height: 650px;
+  margin: -325px 0 0 -325px;
+}
+
+.shape-2 {
+  background: #ffe5e3;
+  width: 440px;
+  height: 440px;
+  margin: -220px 0 0 -220px;
+}
+
+.shape-3 {
+  background: #ffcc57;
+  width: 270px;
+  height: 270px;
+  margin: -135px 0 0 -135px;
+}
+
+/* Content Styling */
+.hero_content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  min-height: 100vh;
+  width: 100vw;
+  background: #f4f4f4;
+  mix-blend-mode: screen;
+}
+
+/* Cursor Styling */
+.cursor {
+  position: fixed;
+  background: #2128bd;
+  width: 20px;
+  height: 20px;
+  margin: -10px 0 0 -10px;
+  border-radius: 50%;
+  will-change: transform;
+  user-select: none;
+  pointer-events: none;
+  z-index: 10000;
+  transition: transform 0.1s ease-out;
+}
+
+/* Selection Styling */
+::selection {
+  color: #fff;
+  background: #2128bd;
+}
