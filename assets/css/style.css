@@ -80,17 +80,9 @@ header {
   color: #2b4973;
   max-width: fit-content;
   margin-bottom: 20px;
-  white-space: nowrap;
   font-weight: 900;
   overflow: hidden;
   display: inline-block;
-  border-right: 0.1em solid #2b4973;
-  width: 0;
-  animation: typing 4s steps(40) 0.75s infinite,
-    blinkCaret 0.75s step-end infinite;
-  background: -webkit-linear-gradient(#eeeeee37, #2b4973);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 @keyframes typing {
   from {
@@ -122,12 +114,26 @@ header {
   background-color: #0056b3;
 }
 @media screen and (min-width: 992px) {
-  .hero_content h1 {
-    font-size: 60px;
-  }
   .language button {
     width: 60px;
     height: 40px;
+  }
+  .hero_content h1 {
+    color: #2b4973;
+    font-size: 60px;
+    max-width: fit-content;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    font-weight: 900;
+    overflow: hidden;
+    display: inline-block;
+    border-right: 0.1em solid #2b4973;
+    width: 0;
+    animation: typing 4s steps(40) 0.75s infinite,
+      blinkCaret 0.75s step-end infinite;
+    background: -webkit-linear-gradient(#eeeeee37, #2b4973);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 /* Footer stil ayarları */
