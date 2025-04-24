@@ -3,11 +3,7 @@ body {
   overflow-x: hidden;
 }
 
-*,
-*::before,
-*::after {
-  cursor: none;
-}
+ 
 
 .container {
   max-width: 1170px;
@@ -19,6 +15,7 @@ main {
   position: relative;
   min-height: calc(100vh - 56px);
 }
+
 body {
   font-family: "Inter", sans-serif;
 }
@@ -248,22 +245,6 @@ footer a:hover {
   background: #f4f4f4;
   mix-blend-mode: screen;
 }
-
-/* Cursor Styling */
-.cursor {
-  position: fixed;
-  background: #2128bd;
-  width: 1;
-  height: 1;
-  margin: -0.5px 0 0 -0.5px;
-  border-radius: 50%;
-  will-change: transform;
-  user-select: none;
-  pointer-events: none;
-  z-index: 10000;
-  transition: transform 0.1s ease-out;
-}
-
 /* Selection Styling */
 ::selection {
   color: #fff;
